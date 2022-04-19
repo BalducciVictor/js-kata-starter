@@ -5,7 +5,7 @@ const port = 8000;
 var app = express();
 
 app.get('/', function(req, res) {
-  res.sendFile('index.html', {root: __dirname })
+  res.sendFile('./templates/index.html', {root: __dirname })
 });
 
 // Démarre le serveur à l'adresse 127.0.0.1 sur le port 8000
